@@ -17,11 +17,4 @@ This is a simple calculator application developed using Python's Tkinter library
 2. Press the '=' button to see the result.
 3. Use the 'C' button to clear the input and start over.
 
-## How to Run
-
-To run the calculator, you need Python installed on your system. Simply execute the Python script `calculator.py` using any Python interpreter.
-
-```bash
-python calculator.py
-
-This markdown file now includes a section for screenshots, information on contributing, and credits with a link to TheRayhan PY's GitHub profile. Additionally, the line "# Made by TheRayhan PY" has been added at the end. Adjustments can be made based on your preferences or additional details you want to include.
+![Alt text](\rayhan-drive\Tkinter_project\Screenshot_32.png)
