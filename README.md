@@ -17,4 +17,4 @@ This is a simple calculator application developed using Python's Tkinter library
 2. Press the '=' button to see the result.
 3. Use the 'C' button to clear the input and start over.
 
-![Alt text](\rayhan-drive\Tkinter_project\Screenshot_32.png)
+![Alt text](rayhan-drive/Tkinter_project/Screenshot_32.png)
