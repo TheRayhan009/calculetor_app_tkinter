@@ -17,9 +17,17 @@ This is a simple calculator application developed using Python's Tkinter library
 2. Press the '=' button to see the result.
 3. Use the 'C' button to clear the input and start over.
 
-## screenshot
+## screenshot1
 
 ![Alt text](Screenshot_33.png)
+
+## screenshot2
+
+![Alt text](Screenshot_34.png)
+
+## screenshot2
+
+![Alt text](Screenshot_35.png)
 
 # How To Download?
 
