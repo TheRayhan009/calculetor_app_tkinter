@@ -20,3 +20,10 @@ This is a simple calculator application developed using Python's Tkinter library
 ## screenshot
 
 ![Alt text](Screenshot_32.png)
+
+# How To Download?
+
+```bash
+git clone https://github.com/TheRayhan009/calculetor_app_tkinter
+
+```
