@@ -19,7 +19,7 @@ This is a simple calculator application developed using Python's Tkinter library
 
 ## screenshot
 
-![Alt text](Screenshot_32.png)
+![Alt text](Screenshot_33.png)
 
 # How To Download?
 
