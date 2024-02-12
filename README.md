@@ -25,7 +25,7 @@ This is a simple calculator application developed using Python's Tkinter library
 
 ![Alt text](Screenshot_34.png)
 
-## screenshot2
+## screenshot3
 
 ![Alt text](Screenshot_35.png)
 
