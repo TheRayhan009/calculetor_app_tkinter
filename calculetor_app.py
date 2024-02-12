@@ -1,5 +1,6 @@
 import tkinter
 from tkinter import *
+import os
 panel=tkinter.Tk()
 def click(event):
     global strvar
@@ -95,7 +96,11 @@ num_button_2=Button(panel,text="C",width=15,height=6,background="#717D7E",border
 num_button_2.grid(row=6,column=1,columnspan=10,sticky="E")
 num_button_2.bind("<Button-1>",click)
 
-# panel.wm_iconbitmap("l.calculator-result")
+# image=PhotoImage(file="D:\\rayhan-drive\\Tkinter_project\\calculator-result.jpg")
+# panel.iconphoto(False,image)
+
+panel.iconbitmap("Tkinter_project\logo.ico")
+
 panel.configure(background="#17202A")
 panel.geometry("485x632+875+60")
 panel.title("RAYHAN's CALCULATOR")
