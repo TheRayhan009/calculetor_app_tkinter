@@ -42,7 +42,7 @@ This Python script creates a graphical calculator application using the Tkinter 
 
 ### Screenshots
 
-![Calculator Screenshot 1](/path/to/screenshot_3.png)
-![Calculator Screenshot 2](/path/to/screenshot_4.png)
-![Calculator Screenshot 3](/path/to/screenshot_5.png)
+![Calculator Screenshot 1](screenshot_3.png)
+![Calculator Screenshot 2](screenshot_4.png)
+![Calculator Screenshot 3](screenshot_5.png)
 
