@@ -1,37 +1,41 @@
-# Rayhan's Calculator
+### Code Description
 
-This is a simple calculator application developed using Python's Tkinter library. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. 
+This Python script creates a graphical calculator application using the Tkinter library. The application allows users to perform basic arithmetic operations and includes special functions such as square root and exponentiation.
 
-## Features
+#### Imports:
+- `tkinter`: A Python library for creating GUI applications.
+- `os`: A module providing functions for interacting with the operating system.
+- `math`: A module providing mathematical functions.
 
-- User-friendly interface with buttons for numbers and operators.
-- Input box to enter the expression.
-- Clear button (C) to clear the input.
-- Equal (=) button to evaluate the expression and display the result.
-- Supports basic arithmetic operations: addition (+), subtraction (-), multiplication (*), and division (/).
-- Error handling for invalid expressions.
+#### GUI Initialization:
+- `panel = tkinter.Tk()`: Initializes the main window of the application.
 
-## Usage
+#### Function Definitions:
+- `click(event)`: Handles button clicks, performing calculations and updating the display accordingly.
 
-1. Enter the expression using the number buttons and operators.
-2. Press the '=' button to see the result.
-3. Use the 'C' button to clear the input and start over.
+#### Global Variables:
+- `strvar`: Holds the string value displayed on the calculator.
+- `ans`: Holds the result of calculations.
 
-## screenshot1
+#### Button Creation:
+- Buttons are created using the `Button` class from Tkinter.
+- Each button represents a digit or an operation, with specified text, width, height, background color, border, and text color (`fg`).
 
-![Alt text](Screenshot_33.png)
+#### Entry Widget:
+- `input_box`: An entry widget for displaying input and output.
+- Configured with a specific width, font, and background color.
 
-## screenshot2
+#### Icon and Window Configuration:
+- `panel.iconbitmap("Tkinter_project\logo.ico")`: Sets the application icon.
+- `panel.configure(background="#17202A")`: Sets the background color of the main window.
+- `panel.geometry("610x630+750+60")`: Sets the initial size and position of the window.
+- `panel.title("RAYHAN's CALCULATOR")`: Sets the title of the window.
 
-![Alt text](Screenshot_34.png)
+#### Main Loop:
+- `panel.mainloop()`: Starts the main event loop of the application, allowing user interaction.
 
-## screenshot3
-
-![Alt text](Screenshot_35.png)
-
-# How To Download?
-
-```bash
-git clone https://github.com/TheRayhan009/calculetor_app_tkinter
-
-```
+#### Additional Notes:
+- The code includes comments to provide clarity on the purpose of each section.
+- Buttons are labeled with digits, mathematical operators, and special symbols.
+- Error handling is implemented for certain mathematical operations.
+- The appearance of the calculator is customized using colors and sizing to enhance user experience.
