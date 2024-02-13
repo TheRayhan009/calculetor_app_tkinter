@@ -46,4 +46,9 @@ This Python script creates a graphical calculator application using the Tkinter 
 ![Calculator ScreenShot 2](/Screenshot_4.png)
 ![Calculator ScreenShot 3](/Screenshot_5.png)
 
+# Download
+```bash
+  git clone https://github.com/TheRayhan009/calculetor_app_tkinter
+```
+
 # MADE BY THERAYHAN PY.
