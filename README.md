@@ -39,3 +39,10 @@ This Python script creates a graphical calculator application using the Tkinter 
 - Buttons are labeled with digits, mathematical operators, and special symbols.
 - Error handling is implemented for certain mathematical operations.
 - The appearance of the calculator is customized using colors and sizing to enhance user experience.
+
+### Screenshots
+
+![Calculator Screenshot 1](/path/to/screenshot_3.png)
+![Calculator Screenshot 2](/path/to/screenshot_4.png)
+![Calculator Screenshot 3](/path/to/screenshot_5.png)
+
