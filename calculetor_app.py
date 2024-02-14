@@ -27,7 +27,7 @@ def click(event):
             ans=eval(strvar.get())
             strvar.set(ans)
         elif "G" in strvar.get():
-            X_chak = strvar.get().replace("G", "6.67×10^−11")
+            X_chak = strvar.get().replace("G", "6.673×10^−11")
             ans=X_chak
             strvar.set(ans)
         elif "h" in strvar.get():
