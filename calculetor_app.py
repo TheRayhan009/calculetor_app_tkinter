@@ -4,6 +4,7 @@ import os
 import math
 panel=tkinter.Tk()
 def click(event):
+    global aa
     global strvar
     global ans
     input_user=event.widget.cget("text")
@@ -14,44 +15,60 @@ def click(event):
         ans=int(ans)
         strvar.set(ans)
         input_box.update()
+    # elif "G" in strvar.get():
+    #         X_chak = strvar.get().replace("G", "6.67 *(10**-11)")
+    #         ans=X_chak
+    #         strvar.set(ans)
+    #         input_box.update()
+    # elif "h" in strvar.get():
+    #         X_chak = strvar.get().replace("h", "6.63*(19**-34)")
+    #         ans=X_chak
+    #         strvar.set(ans)
+    #         input_box.update()
     if input_user == "=":
         if "^" in strvar.get():
             X_chak = strvar.get().replace("^", "**")
             ans=eval(X_chak)
             strvar.set(ans)
-        elif "w" in strvar.get():
-            X_chak = strvar.get().replace("w", "mg")
-            strvar.set(X_chak)
         elif "%" in strvar.get():
             # X_chak = strvar.get().replace("^", "**")
             ans=eval(strvar.get())
             strvar.set(ans)
-        elif "G" in strvar.get():
-            X_chak = strvar.get().replace("G", "6.673×10^−11")
-            ans=X_chak
-            strvar.set(ans)
-        elif "h" in strvar.get():
-            X_chak = strvar.get().replace("h", "6.634×10^−34")
-            ans=X_chak
-            strvar.set(ans)
-        elif "g" in strvar.get():
-            X_chak = strvar.get().replace("g", "9.8")
-            ans=X_chak
-            strvar.set(ans)
+        # elif "g" in strvar.get():
+        #     X_chak = strvar.get().replace("g", "9.8")
+        #     ans=X_chak
+        #     strvar.set(ans)
         else:
             X_chak = strvar.get().replace("X", "*")
             ans=eval(X_chak)
             strvar.set(ans)
         input_box.update()
     elif input_user =="C":
-        strvar.set(" ")
+        strvar.set("")
         input_box.update()
     else:
         strvar.set(strvar.get()+input_user)
         input_box.update()
+def clik2():
+    prenum=strvar.get()
+    previous_txt=prenum[:-1]
+    strvar.set(previous_txt)
+    input_box.update()
 
-
-
+def G_chak():
+    X_chak = strvar.get().replace("G", "6.67 *(10**-11)")
+    ans=X_chak
+    strvar.set(ans)
+    input_box.update()
+def h_chak():
+    X_chak = strvar.get().replace("h", "6.63*(19**-34)")
+    ans=X_chak
+    strvar.set(ans)
+    input_box.update()
+def g_chak():
+    X_chak = strvar.get().replace("g", "9.8")
+    ans=X_chak
+    strvar.set(ans)
 strvar=StringVar()
 strvar.set("")
 
@@ -76,7 +93,7 @@ num_button_1=Button(panel,text="/",width=15,height=6,background="#B45F04",border
 num_button_1.grid(row=2,column=4,padx=1,sticky="w")
 num_button_1.bind("<Button-1>",click)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
-num_button_1=Button(panel,text="G",width=15,height=6,background="red",border="2",fg="white")
+num_button_1=Button(panel,text="G",width=15,height=6,background="red",border="2",fg="white",command=G_chak)
 num_button_1.grid(row=2,column=5,padx=5)
 num_button_1.bind("<Button-1>",click)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
@@ -96,7 +113,7 @@ num_button_1=Button(panel,text="X",width=15,height=6,background="#B45F04",border
 num_button_1.grid(row=3,column=4,padx=1,sticky="w")
 num_button_1.bind("<Button-1>",click)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
-num_button_1=Button(panel,text="g",width=15,height=6,background="red",border="2",fg="white")
+num_button_1=Button(panel,text="g",width=15,height=6,background="red",border="2",fg="white",command=g_chak)
 num_button_1.grid(row=3,column=5,padx=5)
 num_button_1.bind("<Button-1>",click)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
@@ -116,7 +133,7 @@ num_button_1=Button(panel,text="-",width=15,height=6,background="#B45F04",border
 num_button_1.grid(row=4,column=4,padx=1,sticky="w")
 num_button_1.bind("<Button-1>",click)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
-num_button_1=Button(panel,text="h",width=15,height=6,background="red",border="2",fg="white")
+num_button_1=Button(panel,text="h",width=15,height=6,background="red",border="2",fg="white",command=h_chak)
 num_button_1.grid(row=4,column=5,padx=1)
 num_button_1.bind("<Button-1>",click)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
@@ -132,9 +149,9 @@ num_button_1=Button(panel,text="+",width=15,height=6,background="#B45F04",border
 num_button_1.grid(row=5,column=4,padx=1,sticky="w")
 num_button_1.bind("<Button-1>",click)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
-num_button_1=Button(panel,text="w",width=15,height=6,background="red",border="2",fg="white")
+num_button_1=Button(panel,text="DEL",width=15,height=6,background="red",border="2",fg="white",command=clik2)
 num_button_1.grid(row=5,column=5,padx=1)
-num_button_1.bind("<Button-1>",click)
+num_button_1.bind("<Button-1>",clik2)
 #\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
 num_button_2=Button(panel,text="=",width=15,height=6,background="#B45F04",border="2",fg="white")
 num_button_2.grid(row=6,column=1,padx=2)
