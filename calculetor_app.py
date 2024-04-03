@@ -176,7 +176,7 @@ num_button_2.bind("<Button-1>",click)
 # image=PhotoImage(file="D:\\rayhan-drive\\Tkinter_project\\calculator-result.jpg")
 # panel.iconphoto(False,image)
 
-panel.iconbitmap("Tkinter_project\logo.ico")
+# panel.iconbitmap("Tkinter_project\logo.ico")
 
 panel.configure(background="#17202A")
 panel.geometry("610x630+750+60")
